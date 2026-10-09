@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+}
+a { color: #4f46e5; text-decoration: none; }
+.nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 24px; background: #fff; border-bottom: 1px solid #e5e7eb;
+  flex-wrap: wrap; gap: 8px;
+}
+.brand { font-weight: 800; font-size: 20px; }
+.nav-links { display: flex; gap: 14px; align-items: center; }
+.container { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
+.container.small { max-width: 420px; }
+.hero { text-align: center; padding-top: 48px; }
+.hero h1 { font-size: 34px; margin-bottom: 8px; }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 32px; }
+.card {
+  background: #fff; border: 1px solid #e5e7eb; border-radius: 12px;
+  padding: 16px; margin: 12px 0;
+}
+form.card { display: flex; flex-direction: column; gap: 10px; }
+form.card.row { flex-direction: row; }
+.input {
+  width: 100%; padding: 10px 12px; border: 1px solid #d1d5db;
+  border-radius: 8px; font-size: 15px; margin: 4px 0;
+}
+.btn {
+  background: #4f46e5; color: #fff; border: none; padding: 10px 16px;
+  border-radius: 8px; cursor: pointer; font-size: 15px; display: inline-block;
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-big { padding: 12px 22px; font-size: 16px; }
+.btn-light { background: #eef0f6; color: #1f2937; }
+.btn-danger { background: #fee2e2; color: #b91c1c; }
+.row { display: flex; gap: 8px; align-items: center; }
+.row.center { justify-content: center; margin-top: 16px; }
+.grow { flex: 1; min-width: 0; }
+.error {
+  background: #fee2e2; color: #b91c1c; padding: 10px 12px;
+  border-radius: 8px; margin: 8px 0;
+}
+.muted { color: #6b7280; }
+.link { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.short { font-weight: 700; word-break: break-all; }
+.original { margin: 4px 0; color: #4b5563; word-break: break-all; }
+.actions { display: flex; gap: 6px; align-items: flex-start; flex-wrap: wrap; }
